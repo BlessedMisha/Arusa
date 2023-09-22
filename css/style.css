@@ -1,0 +1,1537 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hide{
+    display: none;
+}
+
+body {
+    font-family: 'Neue Montreal';
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+.backimg {
+    background-image: url(../media/mainback.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Nav panelka */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+    height: 64px;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    height: 32px;
+}
+/* menu */
+.iconclose{
+ width: 50px ;
+ height: 50px;   
+}
+.mobile-menu {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 150px; /* Максимальна ширина для телефону */
+    z-index: 1;
+    border: 1px solid #ccc;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mobile-menu a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #384353;
+    font-family: 'Reckless Neue';
+    font-weight: 400;
+    list-style: none;
+}
+.mobile-menu li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+/* Стилі для іконки меню */
+.burger-menu {
+    cursor: pointer;
+}
+/* menu */
+.union {
+    width: 90px;
+    height: 19px;
+    color: #FCFDFD;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    height: 32px;
+}
+
+.nav-text {
+    text-transform: uppercase;
+    color: #FCFDFD;
+    font-size: 14px;
+}
+
+.bag-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    background: #384353;
+    border-radius: 50px;
+    color: #FCFDFD;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1px;
+}
+
+.welcome-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 637px;
+    gap: 48px;
+}
+
+.slogan {
+    height: 84px;
+    font-family: 'Reckless Neue';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FCFDFD;
+}
+
+.shop-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 36px;
+    gap: 8px;
+    height: 30px;
+    background: #F8F4E7;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #323334;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+}
+
+/* 2 storinka */
+
+.seamless-furniture {
+    width: 100%;
+    height: 126px;
+    font-family: 'Reckless Neue';
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #323334;
+}
+
+.section-aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 701px;
+    width: 100%;
+    gap: 36px;
+    padding: 16px;
+    overflow: hidden;
+}
+
+.block-aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 36px;
+}
+
+.concept-text {
+    width: 100%;
+    height: 133px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    color: #323334;
+}
+
+.button_about {
+    padding: 8px 30px;
+    width: 178px;
+    height: 30px;
+    border: 1px solid #DFDEDB;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+    color: #323334;
+}
+
+.home-item {
+    width: 137px;
+    height: 104px;
+    left: 28px;
+    top: 35px;
+    position: absolute;
+}
+
+.home-inner {
+    width: 91px;
+    height: 61px;
+    left: -65px;
+    top: 220px;
+    position: absolute;
+}
+
+.rectangle-img {
+    width: 182px;
+    height: 128px;
+    left: -130px;
+    top: 500px;
+    position: absolute;
+}
+
+.pillow-img {
+    width: 60px;
+    height: 48px;
+    left: 250px;
+    top: 110px;
+    position: absolute;
+}
+
+.right-bed {
+    width: 100px;
+    height: 93px;
+    left: 90%;
+    top: 220px;
+    position: absolute;
+}
+
+.down-bed {
+    width: 136px;
+    height: 105px;
+    left: 228px;
+    top: 580px;
+    position: absolute;
+}
+
+/* 3 storinka */
+
+.feature-products {
+    display: flex;
+    flex-direction: column;
+    border-width: 1px 0px 1px 0px;
+    border-style: solid;
+    border-color: #DFDEDB;
+    color: #323334;
+}
+
+.cards-blocks {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.card {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #DFDEDB;
+}
+
+.product-name {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+    margin: 8px 0px 24px;
+}
+
+.product-price {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+}
+
+.enjoy-text {
+    font-family: 'Reckless Neue';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+.enjoy-block {
+    width: 100%;
+    height: 132px;
+    padding: 24px;
+}
+
+.button-shop {
+    height: 62px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #323334;
+    border: 1px solid #DFDEDB;
+}
+
+/* 4 storinka */
+.section-chair {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 36px;
+    padding: 16px 16px 68px;
+    background: #384353;
+}
+
+.native-light {
+    width: 100%;
+    height: 42px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+
+    color: #FCFDFD;
+
+
+}
+
+.native-description {
+    width: 100%;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #DFDEDB;
+
+}
+
+.native-block {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+}
+
+.native-image {
+    width: 100%;
+}
+.native-image img{
+    width: 100%;
+}
+.viev_button {
+    width: 105px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+    color: #FCFDFD;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* 5 storinka */
+.chair-section {
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image:url(/../media/chair_backimage.png);
+}
+
+/* 6 storinka */
+.lookbook_section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #384353;
+}
+
+.lookbook-block {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    width: 100%;
+    padding: 16px 16px 56px 16px;
+}
+
+.lookbook-text {
+
+    width: 100%;
+    height: 42px;
+    font-family: 'Reckless Neue';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #F5F4F3;
+}
+
+.lookbook-description {
+    width: 100%;
+    height: 95px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    color: #DFDEDB;
+}
+
+.material-block {
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    max-height: 800px;
+}
+.lookbook-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 16px;
+    border-bottom: 1px solid #DFDEDB;
+}
+
+.info-block {
+    border-top: 1px solid #DFDEDB;
+    color: #F5F4F3;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.back-material {
+    width: 100%;
+    padding: 20px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    background: #E0E0E0;
+}
+
+.lookbook-button {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 95px;
+    color: #323334;
+}
+
+.lookbook-button a {
+    text-decoration: none;
+    color: #323334;
+    height: 14px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+
+}
+.lookprod-block{
+    border-top: 1px solid #DFDEDB;
+    padding: 24px;
+}
+.look-products{
+    
+    font-family: 'Reckless Neue';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    gap: 24px;
+    letter-spacing: -0.02em;
+    color:#F5F4F3 ;
+}
+.white{
+color: #DFDEDB;
+}
+.product-shop{
+    height: 62px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #F5F4F3;
+    border-bottom:1px solid #DFDEDB ;
+    margin-bottom: 24px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.2px;  
+}
+/* 7 storinka */
+.detail-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.detailtext-block{
+ 
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 36px;
+width: 100%;
+padding:56px 16px 56px ;
+}
+.detail-text{
+    font-family: 'Reckless Neue';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #323334;
+}
+.detail-add{
+
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+letter-spacing: 0.1em;
+color: #323334;
+text-transform: uppercase;
+
+}
+.detail-description{
+  /* There are multiples of high quality pieces, with styles that transition from classic to contemporary. An exclusive selection of lampshades, vases, murals, pillows, paintings and many gifts to compose great projects. In order selection, a mix of basic style, stricter customization and more compact dimensions, composing sophisticated and exclusive environments. */
+
+font-weight: 400;
+font-size: 15px;
+line-height: 19px;
+text-align: center;
+
+color: #323334;
+  
+}
+.detail-chair{
+width: 100%;
+margin-bottom: -4px;
+}
+.detail-chair-metter{
+    width: 100%;
+    margin-bottom: -4px;
+
+}
+.detail-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding:8px 8px 8px ;
+}
+.detail-block-image{
+margin-right: 7px;
+}
+.detail-block-image:last-child{
+    margin:0;
+}
+/* 8 storinka */
+.articles-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+}
+.articles-text{
+    padding: 24px 45px;
+    width: 100%;
+    font-family: 'Reckless Neue';
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #323334;
+    border-bottom:1px solid #DFDEDB
+}
+.articles-block{
+display: flex;
+flex-direction: column;
+gap: 16px;
+padding: 16px 16px 10px;
+}
+.articles-blockphone{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 16px 10px;   
+}
+.inside-text{
+font-family: 'Reckless Neue';
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: -0.02em;
+color: #323334;
+}
+.artictext-block{
+display: flex;
+flex-direction: column;
+gap: 24px;
+}
+.aricles-description{
+ 
+height: 133px;
+font-weight: 400;
+font-size: 15px;
+line-height: 19px;
+color: #384353;
+}
+.readarticle-buttom{
+align-items: center;
+gap: 8px;
+width: 105px;
+height: 14px;
+font-size: 12px;
+font-weight: 400;
+line-height: 14px; /* 116.667% */
+letter-spacing: 1.2px;
+color: #384353;
+text-decoration: none;
+text-transform: uppercase;
+}
+.allarticle-buttom{
+    height: 62px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #384353;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.2px; 
+}
+.articlebutton-block{
+    border:1px solid #DFDEDB ;
+}
+/* 9 storinka */
+.partclub-section{
+width: 100%;
+display: flex;
+background-image: url(../media/partclub_back.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+padding:16px;
+height: 677px;
+justify-content: center;
+align-items: center;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+}}
+.partclub-block{
+    display: flex;
+    gap: 48px; 
+    flex-direction: column; 
+    transform: translateY(20px); /* Зміщуємо вниз на 20px */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.partclub-text{
+    font-family: 'Reckless Neue';
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #F5F4F3;
+}
+.your-email{
+box-sizing: border-box;
+padding: 16px;
+gap: 10px;
+border: 1px solid #DFDEDB;
+border-radius: 8px;
+}
+input[type="text"]::placeholder {
+    color: #F5F4F3;
+}
+
+input[type="text"] {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #F5F4F3
+}
+/* 10 storinka */
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #384353;
+    padding-bottom: 56px;
+    
+}
+.footer-blocks {
+    display: flex;
+    width: 100%;
+}
+
+.footer-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #DFDEDB;
+    gap:8px;
+}
+.footer-image img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 17px 35px ;
+}
+.arusa-footer{
+    height: 62px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #DFDEDB;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.2px; 
+}
+.arusa-footer-block{
+    border:1px solid #DFDEDB ;
+}
+.rozdil-footer{
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.1em;
+color: #F5F4F3;
+text-transform: uppercase;
+}
+.footer-card a{
+  color:#F5F4F3;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px; /* 116.667% */
+    letter-spacing: 1.2px;
+}
+.section-chair-planshet{
+    display:none;
+}
+.chair-section-planshet{
+    display: none;
+}
+.info-block-planshet{
+    display: none;
+}
+.lookbook-top-block-planshet{
+    display: none;
+}
+.hiden-text-lookbook{
+    display: none;
+}
+.lookbook-block-planshet{
+    display: none;
+}
+.hiden-detail-text{
+    display: none;
+}
+.detail-images-planshet{
+    display: none;
+}
+.second-chair-section-planshet{
+    display: none;
+}
+.second-card-chair{
+    display: none;
+}
+.articles-blockmain{
+    display: none;
+}
+.artictext-block-planshet{
+    display: none;
+}
+@media (min-width: 769px) {
+.section-chair{
+    display:none;
+}
+.chair-section{
+    display: none;
+}
+.mobilelookbook{
+    display: none;
+}
+.detail-images-phone{
+    display: none;
+}
+.articles-blockphone{
+    display: none;
+}
+.nav-left{
+    margin-left:50px;
+}
+.nav-right{
+    margin-right:50px;
+}
+.slogan{
+    height: 145px;
+    font-family: 'Reckless Neue';
+    font-weight: 250;
+    font-size: 84px;
+    line-height: 80px;
+
+}
+
+/* 2 storinka */
+.block-aboutus {
+    width: 100%;
+    gap:1px;
+    
+}
+.section-aboutus {
+    height: 950px;
+    width: 100%;
+}
+.seamless-furniture {
+    width: 100%;
+    height: 190px;
+    font-weight: 480;
+    font-size: 64px;
+    line-height: 58px;
+}
+
+.furniture{
+     font-style: italic;
+}
+.concept-text{
+    width: 506px;
+    height: 80px;
+    
+    margin-bottom: 23px;
+}
+.home-item {
+    width: 252px;
+    height: 252px;
+    left: 35%;
+    top: 35px;
+}
+.home-inner {
+    width: 150px;
+    height: 150px;
+    left: 1%;
+    top: 220px;
+}
+.right-bed {
+    width: 150px;
+    height: 150px;
+    left: 88%;
+    top: 39%;
+}
+.pillow-img {
+    width: 100px;
+    height: 100px;
+    left: 80%;
+    top: 25%;
+}
+.right-bed {
+    width: 120px;
+    height: 120px;
+    left: 90%;
+    top: 45%;
+
+}
+
+.down-bed {
+    width: 230px;
+    height: 230px;
+    left: 65%;
+    top: 60%;
+ 
+}
+.rectangle-img {
+    width: 152px;
+    height: 152px;
+    left: -3%;
+    top: 500px;
+}
+/* 3 storinka */
+.product-row{
+    display: flex;
+    flex-direction: row;
+}
+.product-text-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.product-name{
+    margin:0px;
+}
+/* 4 storinka */
+.section-chair-planshet{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    gap: 36px;
+    background: #384353;  
+    height: 670px;
+}
+.section-chair-planshet img{
+    width: 50%;
+    height: 100%;
+    
+}
+.native-block{
+   margin-left: 36px;
+   margin-top:150px;
+}
+/* 5 storinka */
+.chair-section-planshet{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 1081px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image:url(../media/chair_backimage.png);
+}
+.card-chair-right{
+        width: 250px;
+        padding: 8px;
+        position:absolute;
+        border: 1px solid #DFDEDB;
+        background: #FFFFFF;
+        left:511px;
+        top:701px;
+}
+.card-chair{
+    position: absolute;
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #DFDEDB;
+    background: #FFFFFF;
+    left: 100px;
+    top:150px;}
+/* 6 storinka */
+
+ .lookbook-top-block-planshet{
+display: flex;
+flex-direction: row;
+height: 769px;
+}
+
+.lookbook-block-planshet{
+display: flex;
+flex-direction: column-reverse;
+border-width: 0px 1px 0px;
+border-style: solid ;
+border-color: #E0E0E0;
+color:beige;
+width: 50%;
+/* max-height:800px ; */
+}
+.lookbook-block{
+    width: 50%;
+}
+.info-block-planshet {
+    border-top: 1px solid #DFDEDB;
+    color: #F5F4F3;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+.lookbook-info-planshet {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 16px;
+    border-bottom: 1px solid #DFDEDB;
+}
+.hiden-text-lookbook{
+    display: flex;
+    align-items: flex-end;
+    color: #f9fbfc;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    border-left: 1px solid #DFDEDB;
+    text-align: center;
+    text-transform: uppercase;
+}
+.hiden-text{
+    width: 100%;
+    height: 42px;
+    font-family: 'Reckless Neue';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #F5F4F3;
+    padding-top: 16px;
+}
+.lookbook-block{
+margin-top: 250px;
+gap:250px;
+}
+/* 7 storinka */
+.detail-text{
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 42px;
+    padding-top: 50px;
+}
+.detail-description{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    padding: 16px 190px 16px;   
+}
+.detail-block-planshet{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.detail-block{
+    flex-direction: column;
+}
+.detail-block-image:last-child{
+    margin:0;
+}
+.detail-block-image{
+    padding:6px 6px 6px
+}
+.hiden-detail-text{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-family: 'Reckless Neue';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #323334;
+    padding-top: 45px;
+}
+.detail-block-image{
+margin-right: 0px;
+width: 95%;
+padding: 0px 0px 5px 7px;
+}
+/* .detail-block{
+    width: 96%;
+    padding: 0px;
+} */
+.detail-images-planshet{
+    display: flex;
+    width: 100%;
+}
+.detail-chair-metter{
+    width: 100%;
+    margin-bottom: -4px;
+    max-height: 677px;
+    padding: 9px 0px 15px 16px;
+}
+.second-chair-section-planshet{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 665px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image:url(../media/secondchair_backimage.png);
+}
+.second-card-chair{
+    display: flex;
+    position: absolute;
+    width: 350px;
+    padding: 15px;
+    
+    left: 30%;
+    top: 30%;
+}
+.articles-blockmain{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 16px;
+    padding: 16px 16px 10px;
+    height: 560px;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.articles-blockmain.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+.detail-chair-planshet{
+ width: 250px;
+}
+.hiden-enjoy-text{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-family: 'Reckless Neue';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #323334;
+    padding-top: 25px;
+}
+.artictext-block-planshet{
+    display: flex;
+
+    flex-direction: column;
+    gap: 24px;
+    padding: 142px 33px 148px 33px;
+}
+.allarticles{
+    display: flex;
+    flex-direction: row;
+}
+.artictext-block{
+    padding-bottom: 154px;
+    
+}
+.readarticle-buttom{
+padding-top: 54px;
+}
+.partclub-text{
+    font-size: 58px;
+    line-height: 67px;
+}
+.footer-planshet{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+}
+}
+@media (min-width: 838px) {
+    .section-chair{
+        display:none;
+    }
+    .chair-section{
+        display: none;
+    }
+    .mobilelookbook{
+        display: none;
+    }
+    .detail-images-phone{
+        display: none;
+    }
+    .articles-blockphone{
+        display: none;
+    }
+    .nav-left{
+        margin-left:50px;
+    }
+    .nav-right{
+        margin-right:50px;
+    }
+    .slogan{
+        height: 145px;
+        font-family: 'Reckless Neue';
+        font-weight: 250;
+        font-size: 84px;
+        line-height: 80px;
+    
+    }
+    
+    /* 2 storinka */
+    .block-aboutus {
+        width: 100%;
+        gap:1px;
+        
+    }
+    .section-aboutus {
+        height: 950px;
+        width: 100%;
+    }
+    .seamless-furniture {
+        width: 100%;
+        height: 190px;
+        font-weight: 480;
+        font-size: 64px;
+        line-height: 58px;
+    }
+    
+    .furniture{
+         font-style: italic;
+    }
+    .concept-text{
+        width: 506px;
+        height: 80px;
+        
+        margin-bottom: 23px;
+    }
+    .home-item {
+        width: 252px;
+        height: 252px;
+        left: 35%;
+        top: 35px;
+    }
+    .home-inner {
+        width: 150px;
+        height: 150px;
+        left: 1%;
+        top: 220px;
+    }
+    .right-bed {
+        width: 150px;
+        height: 150px;
+        left: 88%;
+        top: 39%;
+    }
+    .pillow-img {
+        width: 100px;
+        height: 100px;
+        left: 80%;
+        top: 25%;
+    }
+    .right-bed {
+        width: 120px;
+        height: 120px;
+        left: 90%;
+        top: 45%;
+    
+    }
+    
+    .down-bed {
+        width: 230px;
+        height: 230px;
+        left: 65%;
+        top: 60%;
+     
+    }
+    .rectangle-img {
+        width: 152px;
+        height: 152px;
+        left: -3%;
+        top: 500px;
+    }
+    /* 3 storinka */
+    .product-row{
+        display: flex;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+    .product-text-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .product-name{
+        margin:0px;
+    }
+    /* 4 storinka */
+    .section-chair-planshet{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        gap: 36px;
+        background: #384353;  
+        height: 670px;
+    }
+    .section-chair-planshet img{
+        width: 50%;
+        height: 100%;
+        
+    }
+    .native-block{
+       margin-left: 36px;
+       margin-top:150px;
+    }
+    /* 5 storinka */
+    .chair-section-planshet{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 1081px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image:url(../media/chair_backimage.png);
+    }
+    .card-chair-right{
+            width: 250px;
+            padding: 8px;
+            position:absolute;
+            border: 1px solid #DFDEDB;
+            background: #FFFFFF;
+            left:511px;
+            top:701px;
+    }
+    .card-chair{
+        position: absolute;
+        width: 250px;
+        padding: 15px;
+        border: 1px solid #DFDEDB;
+        background: #FFFFFF;
+        left: 100px;
+        top:150px;}
+    /* 6 storinka */
+    
+     .lookbook-top-block-planshet{
+    display: flex;
+    flex-direction: row;
+    height: 769px;
+    }
+    
+    .lookbook-block-planshet{
+    display: flex;
+    flex-direction: column-reverse;
+    border-width: 0px 1px 0px;
+    border-style: solid ;
+    border-color: #E0E0E0;
+    color:beige;
+    width: 50%;
+    /* max-height:800px ; */
+    }
+    .lookbook-block{
+        width: 50%;
+    }
+    .info-block-planshet {
+        border-top: 1px solid #DFDEDB;
+        color: #F5F4F3;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+    }
+    .lookbook-info-planshet {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 16px;
+        border-bottom: 1px solid #DFDEDB;
+    }
+    .hiden-text-lookbook{
+        display: flex;
+        align-items: flex-end;
+        color: #f9fbfc;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        border-left: 1px solid #DFDEDB;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .hiden-text{
+        width: 100%;
+        height: 42px;
+        font-family: 'Reckless Neue';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #F5F4F3;
+        padding-top: 16px;
+    }
+    .lookbook-block{
+    margin-top: 250px;
+    gap:250px;
+    }
+    /* 7 storinka */
+    .detail-text{
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 42px;
+        padding-top: 50px;
+    }
+    .detail-description{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        text-align: center;
+        padding: 16px 190px 16px;   
+    }
+    .detail-block-planshet{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .detail-block{
+        flex-direction: column;
+    }
+    .detail-block-image:last-child{
+        margin:0;
+    }
+    .detail-block-image{
+        padding:6px 6px 6px
+    }
+    .hiden-detail-text{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        font-family: 'Reckless Neue';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #323334;
+        padding-top: 45px;
+    }
+    .detail-block-image{
+    margin-right: 0px;
+    width: 95%;
+    padding: 0px 0px 5px 7px;
+    }
+    /* .detail-block{
+        width: 96%;
+        padding: 0px;
+    } */
+    .detail-images-planshet{
+        display: flex;
+        width: 100%;
+    }
+    .detail-chair-metter{
+        width: 100%;
+        margin-bottom: -4px;
+        max-height: 677px;
+        padding: 9px 0px 15px 16px;
+    }
+    .second-chair-section-planshet{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 665px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image:url(../media/secondchair_backimage.png);
+    }
+    .second-card-chair{
+        display: flex;
+        position: absolute;
+        width: 350px;
+        padding: 15px;
+        
+        left: 30%;
+        top: 30%;
+    }
+    .articles-blockmain{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 16px;
+        padding: 16px 16px 10px;
+        height: 560px;
+    }
+    .detail-chair-planshet{
+     width: 250px;
+    }
+    .hiden-enjoy-text{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        font-family: 'Reckless Neue';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #323334;
+        padding-top: 25px;
+    }
+    .artictext-block-planshet{
+        display: flex;
+    
+        flex-direction: column;
+        gap: 24px;
+        padding: 142px 33px 148px 33px;
+    }
+    .allarticles{
+        display: flex;
+        flex-direction: row;
+    }
+    .artictext-block{
+        padding-bottom: 154px;
+        
+    }
+    .readarticle-buttom{
+    padding-top: 54px;
+    }
+    .partclub-text{
+        font-size: 58px;
+        line-height: 67px;
+    }
+    .footer-planshet{
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: center;
+    }
+    }
